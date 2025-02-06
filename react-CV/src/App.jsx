@@ -1,19 +1,9 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import ModalWindow from './components/Header/ModalWindow'
+import '../src/components/Header/ModalWindow.css'
 
 function App() {
-  const [showModal, setShowModal] = useState(false);
-  
-  const handleOpenModal = () => {
-    setShowModal(true)
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false)
-  };
+  const [modal, setModal] = useState(false);
 
   return (
     <header>
@@ -24,10 +14,16 @@ function App() {
         <a>Контакты</a>
     </div>
 
-    <button onClick={handleOpenModal} className="btn">Связаться</button>
-    <ModalWindow show={showModal} onClose={handleCloseModal}>
-        <p>Связаться</p>
-    </ModalWindow>
+    <button onClick={() => setModal(!modal)} className="btn">Связаться</button>
+
+    {!modal ? '' : (
+    <div className='modal'>
+        <div onClick={() => setModal(!modal)} className='close'>
+            <button>Закрыть</button>
+        </div>
+        <div className='content'>My modal</div>
+    </div>
+    )}
 
     <div className="icons">
         <a href="https://t.me/kotboris98">
