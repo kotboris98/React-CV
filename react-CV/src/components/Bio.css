@@ -1,0 +1,37 @@
+.bio {
+    margin-top: 50px;
+    width: 140%;
+    display: flex;
+    column-gap: 100px;
+}
+
+.bio__heading {
+    text-align: left;
+    margin-top: 100px;
+}
+
+.bio__li {
+    font-size: large;
+    text-align: left;
+    padding: 10px;
+}
+
+.bio__first__heading {
+    display: flex;
+    flex-direction: row;
+}
+
+.bio__icon__programmer {
+    margin-top: 80px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.photo__of__me {
+    height: 500px;
+    width: 400px;
+    text-align: right;
+    border-radius: 20px;
+}
+

@@ -1,7 +1,9 @@
 body {
+    height: 100vh;
     font-family: "Inter", serif;
     margin-left: 5%;
     margin-right: 5%;
+    background: linear-gradient(320deg, #E6E6FA, #D8BFD8, #DDA0DD, #EE82EE, #DA70D6);
 }
 
 header {
