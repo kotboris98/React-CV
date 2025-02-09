@@ -1,5 +1,5 @@
 .bio {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 140%;
     display: flex;
     column-gap: 100px;
@@ -21,7 +21,7 @@
     flex-direction: row;
 }
 
-.bio__icon__programmer {
+.bio__icon {
     margin-top: 80px;
     margin-right: 10px;
     width: 50px;
@@ -33,5 +33,6 @@
     width: 400px;
     text-align: right;
     border-radius: 20px;
+    margin-top: 100px;
 }
 

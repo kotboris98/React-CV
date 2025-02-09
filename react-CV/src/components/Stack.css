@@ -1,0 +1,21 @@
+.stack {
+    width: 90%;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: wheat;
+}
+
+.stack__icon {
+    margin-top: 10px;
+    width: 100px;
+    height: 200px;
+}
+
+.stack__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 30px;
+    margin-left: 20px;
+}
