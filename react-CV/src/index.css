@@ -8,16 +8,21 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between';
+    width: 100%;
     height: 100px;
     place-items: center;
-    margin-left: -900px;
+    margin-left: -400px;
 }
 
 .menu {
-    height: 100px;
-    width: 100%;
+    height: 50px;
+    width: 1200px;
     align-content: center;
+    align-items: center;
+    display: flex;
+    column-gap: 30px;
+    margin-left: 50px;
 }
 
 header a {

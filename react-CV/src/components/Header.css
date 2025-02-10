@@ -1,0 +1,9 @@
+.header__right {
+    display: flex;
+    margin-left: 500px;
+    margin-right: -100px;
+}
+
+.header__center {
+    width: 600px;
+}

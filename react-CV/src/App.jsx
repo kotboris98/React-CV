@@ -5,6 +5,7 @@ import Modal from './components/Modal/Modal.jsx';
 import './components/Modal/Modal.css';
 import './components/Bio.css';
 import './components/Stack.css';
+import './components/Header.css';
 
 const App = () => {
   const [modalActive, setModalActive] = useState(false);
@@ -17,19 +18,20 @@ const App = () => {
               <a>Проекты</a>
               <a>Контакты</a>
           </div>
-
-          <button className="btn" onClick={() => setModalActive(true)}>Связаться</button>
-
-          <div className="icons">
-              <a href="https://t.me/kotboris98">
-                  <img src='../src/assets/telegram.png' className="icon"></img>
-              </a>
-              <a href="https://instagram.com/kotboris98" className="icon">
-                  <img src='../src/assets/instagram.png' className="icon"></img>
-              </a>
-              <a href="https://vk.com/kotboris_98" className="icon">
+          <div className='header__center'></div>
+          <div className='header__right'>
+            <button className="btn" onClick={() => setModalActive(true)}>Связаться</button>
+            <div className="icons">
+                <a href="https://t.me/kotboris98">
+                    <img src='../src/assets/telegram.png' className="icon"></img>
+                </a>
+                <a href="https://instagram.com/kotboris98" className="icon">
+                    <img src='../src/assets/instagram.png' className="icon"></img>
+                </a>
+                <a href="https://vk.com/kotboris_98" className="icon">
                   <img src='../src/assets/vk.png' className="icon"></img>
-              </a>
+                </a>
+            </div>
           </div>
       </header>
       <Modal active={modalActive} setActive={setModalActive} />
@@ -73,6 +75,10 @@ const App = () => {
                 <img src='../src/assets/react.svg' className='stack__icon'></img>
                 <img src='../src/assets/git.svg' className='stack__icon'></img>
             </div>
+        </div>
+        <div className='bio__first__heading'>
+            <img src='../src/assets/documents.svg' className='bio__icon'></img>
+            <h2 className='bio__heading'>Мои проекты</h2>
         </div>
       </main>
       </>
