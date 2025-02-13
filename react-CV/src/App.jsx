@@ -80,6 +80,9 @@ const App = () => {
             <img src='../src/assets/documents.svg' className='bio__icon'></img>
             <h2 className='bio__heading'>Мои проекты</h2>
         </div>
+        <div>
+            <img></img>
+        </div>
       </main>
       </>
 )
