@@ -9,6 +9,7 @@
     height: 400px;
     margin-bottom: 50px;
     margin-top: 50px;
+    margin-left: 180px;
 }
 
 .project__block {
@@ -22,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: center;
+    text-align: left;
     margin-left: 100px;
 }
 
@@ -37,6 +38,12 @@ footer {
     background: #EE82EE;
     align-content: center;
     align-items: center;
+}
+
+footer p {
+    color: white;
+    gap: 10px;
+    text-align: center;
 }
 
 

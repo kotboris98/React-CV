@@ -19,8 +19,7 @@ const App = () => {
               <a>Проекты</a>
               <a>Контакты</a>
           </div>
-          <div className='header__center'></div>
-          <div className='header__right'>
+          <div className='contacts'>
               <button className="btn" onClick={() => setModalActive(true)}>Связаться</button>
               <div className="icons">
                   <a href="https://t.me/kotboris98">
@@ -39,7 +38,7 @@ const App = () => {
           <main>
               <div className='bio'>
                   <div className='bio__text'>
-                      <div className='bio__first__heading'>
+                      <div className='bio__article'>
                           <img src='../src/assets/programmer.svg' className='bio__icon'></img>
                           <h2 className='bio__heading'>Обо мне</h2>
                       </div>
@@ -48,7 +47,7 @@ const App = () => {
                           <li className='bio__li'>Придерживаюсь чистого и аккуратного кода</li>
                           <li className='bio__li'>Стремлюсь к саморазвитию, получению нового опыта и работе над настоящими проектами</li>
                       </ul>
-                      <div className='bio__first__heading'>
+                      <div className='bio__article'>
                           <img src='../src/assets/internship.svg' className='bio__icon'></img>
                           <h2 className='bio__heading'>Чем я занимался на стажировке</h2>
                       </div>
@@ -63,7 +62,8 @@ const App = () => {
                       <img src='../src/assets/photo_of_me.jpg' className='photo__of__me'></img>
                   </div>
               </div>
-              <div className='bio__first__heading'>
+              <div className='stack__and__projects'>
+              <div className='bio__article'>
                   <img src='../src/assets/tools.svg' className='bio__icon'></img>
                   <h2 className='bio__heading'>Мой стек</h2>
               </div>
@@ -77,7 +77,7 @@ const App = () => {
                       <img src='../src/assets/git.svg' className='stack__icon'></img>
                   </div>
               </div>
-              <div className='bio__first__heading'>
+              <div className='bio__article'>
                   <img src='../src/assets/documents.svg' className='bio__icon'></img>
                   <h2 className='bio__heading'>Мои проекты</h2>
               </div>
@@ -110,6 +110,7 @@ const App = () => {
                       </div>
                   </div>
               </div>
+            </div>
           </main>
       </><footer>
               <p>Developed and designed by <span>Boris Tyukov</span></p>
