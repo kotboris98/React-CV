@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import './components/Modal/Modal'
 import Modal from './components/Modal/Modal.jsx';
@@ -11,15 +11,34 @@ import './components/Projects.css';
 const App = () => {
   const [modalActive, setModalActive] = useState(false);
 
+  const [scroll, setScroll] = useState(0);
+
+  const scrollUp = () => {
+    setScroll(window.scrollY)
+  }
+
+  const upButton = () => {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'})
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', scrollUp)
+  }, [])
+
+  const toBlock = (height) => {
+    window.scrollTo({top: height, left: 0, behavior: 'smooth'})
+  }
+
   return (
     <><><header>
-          <div className="menu">
-              <a>Обо мне</a>
-              <a>Мой стек</a>
-              <a>Проекты</a>
-              <a>Контакты</a>
-          </div>
-          <div className='contacts'>
+        <div className='navigation'>
+            <div className="menu">
+              <a onClick={upButton}>Обо мне</a>
+              <a onClick={(e) => toBlock(e.target.getAttribute('height'))} height = '620'>Мой стек</a>
+              <a onClick={(e) => toBlock(e.target.getAttribute('height'))} height = '1000'>Проекты</a>
+              <a onClick={(e) => toBlock(e.target.getAttribute('height'))} height = '3000'>Контакты</a>
+            </div>
+            <div className='contacts'>
               <button className="btn" onClick={() => setModalActive(true)}>Связаться</button>
               <div className="icons">
                   <a href="https://t.me/kotboris98">
@@ -32,6 +51,7 @@ const App = () => {
                       <img src='../src/assets/vk.png' className="icon"></img>
                   </a>
               </div>
+            </div>
           </div>
       </header>
           <Modal active={modalActive} setActive={setModalActive} />
@@ -63,10 +83,10 @@ const App = () => {
                   </div>
               </div>
               <div className='stack__and__projects'>
-              <div className='bio__article'>
+                <div className='bio__article'>
                   <img src='../src/assets/tools.svg' className='bio__icon'></img>
                   <h2 className='bio__heading'>Мой стек</h2>
-              </div>
+                </div>
               <div className='stack'>
                   <div className='stack__icons'>
                       <img src='../src/assets/html.svg' className='stack__icon'></img>
@@ -110,6 +130,14 @@ const App = () => {
                       </div>
                   </div>
               </div>
+              <div className='bio__article'>
+                  <img src='../src/assets/Phone.svg' className='bio__icon'></img>
+                  <h2 className='bio__heading'>Контакты</h2>
+              </div>
+              <ul>
+                <li className='bio__li'>Электронная почта: <h2>borisvip169@gmail.com</h2></li>
+                <li className='bio__li'>Гитхаб: <h2><a href='https://github.com/kotboris98'>https://github.com/kotboris98</a></h2></li>
+              </ul>
             </div>
           </main>
       </><footer>
