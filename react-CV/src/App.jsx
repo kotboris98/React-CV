@@ -7,11 +7,27 @@ import './components/Bio.css';
 import './components/Stack.css';
 import './components/Header.css';
 import './components/Projects.css';
+import ModalMenu from './components/ModalMenu.jsx';
 
 const App = () => {
   const [modalActive, setModalActive] = useState(false);
+  const [modalMenuActive, setModalMenuActive] = useState(false);
 
   const [scroll, setScroll] = useState(0);
+
+  const [isPortrait, setIsPortrait] = useState(window.innerWidth > window.innerHeight);
+
+  useEffect(() => {
+    const handleResize = () => {
+        setIsPortrait(window.innerWidth > window.innerHeight)
+    }
+
+    window.addEventListener('resize', handleResize)
+
+    return () => {
+        window.removeEventListener('resize', handleResize)
+    }
+  }, [])
 
   const scrollUp = () => {
     setScroll(window.scrollY)
@@ -31,6 +47,7 @@ const App = () => {
 
   return (
     <><><header>
+        {isPortrait ? (
         <div className='navigation'>
             <div className="menu">
               <a onClick={upButton}>Обо мне</a>
@@ -52,9 +69,33 @@ const App = () => {
                   </a>
               </div>
             </div>
+          </div>)
+          : ( 
+            <div className='navigation'>
+            <div className="menu">
+                <a onClick={() => setModalMenuActive(true)} className="icon-mobile">
+                      <img src='../src/assets/burger-menu.svg' className="icon-mobile"></img>
+                </a>
+            </div>
+            <div className='contacts-mobile'>
+              <button className="btn-mobile" onClick={() => setModalActive(true)}>Связаться</button>
+              <div className="icons">
+                  <a href="https://t.me/kotboris98">
+                      <img src='../src/assets/telegram.png' className="icon-mobile"></img>
+                  </a>
+                  <a href="https://instagram.com/kotboris98" className="icon-mobile">
+                      <img src='../src/assets/instagram.png' className="icon-mobile"></img>
+                  </a>
+                  <a href="https://vk.com/kotboris_98" className="icon-mobile">
+                      <img src='../src/assets/vk.png' className="icon-mobile"></img>
+                  </a>
+              </div>
+            </div>
           </div>
+          )}
       </header>
           <Modal active={modalActive} setActive={setModalActive} />
+          <ModalMenu active={modalMenuActive} setActive={setModalMenuActive} />
           <main>
               <div className='bio'>
                   <div className='bio__text'>

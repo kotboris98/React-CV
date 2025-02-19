@@ -2,3 +2,9 @@
     display: flex;
     margin-right: 170px;
 }
+
+.contacts-mobile {
+    display: flex;
+    margin-right: 170px;
+    gap: 5vw;
+}
