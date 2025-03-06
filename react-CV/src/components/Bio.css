@@ -10,6 +10,11 @@
     margin-top: 100px;
 }
 
+.bio__heading-mobile {
+    text-align: left;
+    margin-top: 80px;
+}
+
 .bio__li {
     font-size: large;
     text-align: left;
@@ -19,6 +24,12 @@
 .bio__article {
     display: flex;
     flex-direction: row;
+}
+
+.bio__article-mobile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
 }
 
 .bio__icon {
@@ -33,6 +44,11 @@
     margin-left: 100px;
 }
 
+.bio__text-mobile {
+    width: 90%;
+    margin-left: 10px;
+}
+
 .photo__of__me {
     height: 500px;
     width: 400px;
@@ -40,4 +56,13 @@
     border-radius: 20px;
     margin-top: 100px;
 }
+
+.photo__of__me-mobile {
+    height: 400px;
+    width: 300px;
+    place-items: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
 

@@ -7,4 +7,6 @@
     display: flex;
     margin-right: 170px;
     gap: 5vw;
+    place-items: center;
+    place-content: center;
 }
