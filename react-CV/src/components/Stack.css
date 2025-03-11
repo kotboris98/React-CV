@@ -6,10 +6,25 @@
     background-color: wheat;
 }
 
+.stack-mobile {
+    width: 90%;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: wheat; 
+    margin-top: 20px;
+}
+
 .stack__and__projects {
     display: flex;
     flex-direction: column;
     margin-left: 100px;
+}
+
+.stack__and__projects-mobile {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
 }
 
 .stack__icon {
@@ -24,4 +39,11 @@
     justify-content: space-around;
     column-gap: 30px;
     margin-left: 20px;
+}
+
+.stack__icons-mobile {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 150px 150px 150px;
+    margin-left: 25px;
 }

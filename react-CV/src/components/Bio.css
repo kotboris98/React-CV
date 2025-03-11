@@ -21,6 +21,12 @@
     padding: 10px;
 }
 
+.bio__li-mobile {
+    width: 80vw;
+    padding: 10px;
+    margin-right: 5px;
+}
+
 .bio__article {
     display: flex;
     flex-direction: row;
@@ -30,6 +36,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    width: 90vw;
 }
 
 .bio__icon {
@@ -63,6 +70,14 @@
     place-items: center;
     border-radius: 20px;
     margin-top: 20px;
+}
+
+.ul-mobile {
+    width: 100%;
+    margin-left: -30px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 

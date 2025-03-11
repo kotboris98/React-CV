@@ -193,29 +193,29 @@ const App = () => {
                               <h2 className='bio__heading-mobile'>Обо мне</h2>
                           </div>
                           <img src='../src/assets/photo_of_me.jpg' className='photo__of__me-mobile'></img>
-                          <ul>
-                              <li className='bio__li'>Начинающий Frontend-разработчик</li>
-                              <li className='bio__li'>Придерживаюсь чистого и аккуратного кода</li>
-                              <li className='bio__li'>Стремлюсь к саморазвитию, получению нового опыта и работе над настоящими проектами</li>
+                          <ul className='ul-mobile'>
+                              <li className='bio__li-mobile'>Начинающий Frontend-разработчик</li>
+                              <li className='bio__li-mobile'>Придерживаюсь чистого и аккуратного кода</li>
+                              <li className='bio__li-mobile'>Стремлюсь к саморазвитию, получению нового опыта и работе над настоящими проектами</li>
                           </ul>
                           <div className='bio__article-mobile'>
                               <img src='../src/assets/internship.svg' className='bio__icon'></img>
-                              <h2 className='bio__heading'>Чем я занимался на стажировке</h2>
+                              <h2 className='bio__heading-mobile'>Чем я занимался на стажировке</h2>
                           </div>
-                          <ul>
-                              <li className='bio__li'>Верстка лендингов (сайтов) на HTML и CSS</li>
-                              <li className='bio__li'>Разработка браузерной игры на JavaScript</li>
-                              <li className='bio__li'>Разработка мобильного приложения на Angular</li>
-                              <li className='bio__li'>Разработка онлайн-магазина на Angular</li>
+                          <ul className='ul-mobile'>
+                              <li className='bio__li-mobile'>Верстка лендингов (сайтов) на HTML и CSS</li>
+                              <li className='bio__li-mobile'>Разработка браузерной игры на JavaScript</li>
+                              <li className='bio__li-mobile'>Разработка мобильного приложения на Angular</li>
+                              <li className='bio__li-mobile'>Разработка онлайн-магазина на Angular</li>
                           </ul>
                       </div>
-                  </div><div className='stack__and__projects'>
+                  </div><div className='stack__and__projects-mobile'>
                           <div className='bio__article-mobile'>
                               <img src='../src/assets/tools.svg' className='bio__icon'></img>
-                              <h2 className='bio__heading'>Мой стек</h2>
+                              <h2 className='bio__heading-mobile'>Мой стек</h2>
                           </div>
-                          <div className='stack'>
-                              <div className='stack__icons'>
+                          <div className='stack-mobile'>
+                              <div className='stack__icons-mobile'>
                                   <img src='../src/assets/html.svg' className='stack__icon'></img>
                                   <img src='../src/assets/css.svg' className='stack__icon'></img>
                                   <img src='../src/assets/js.svg' className='stack__icon'></img>
