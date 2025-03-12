@@ -228,28 +228,28 @@ const App = () => {
                               <img src='../src/assets/documents.svg' className='bio__icon'></img>
                               <h2 className='bio__heading'>Мои проекты</h2>
                           </div>
-                          <div className='projects'>
-                              <div className='project__block'>
-                                  <img src='../src/assets/S1.png' className='projects__screenshot'></img>
-                                  <div className='project__description'>
+                          <div className='projects-mobile'>
+                              <div className='project__block-mobile'>
+                                  <img src='../src/assets/S1.png' className='projects__screenshot-mobile'></img>
+                                  <div className='project__description-mobile'>
                                       <div>
                                           <div><h2 className='project__text'>Название:</h2><h1>Лендинг веб-страницы проекта Learn Up</h1></div>
                                           <div><h2 className='project__text'>Технологии:</h2><h1>HTML, CSS</h1></div>
                                       </div>
                                   </div>
                               </div>
-                              <div className='project__block'>
-                                  <img src='../src/assets/S2.png' className='projects__screenshot'></img>
-                                  <div className='project__description'>
+                              <div className='project__block-mobile'>
+                                  <img src='../src/assets/S2.png' className='projects__screenshot-mobile'></img>
+                                  <div className='project__description-mobile'>
                                       <div>
                                           <div><h2 className='project__text'>Название:</h2><h1>Калькулятор</h1></div>
                                           <div><h2 className='project__text'>Технологии:</h2><h1>JavaScript</h1></div>
                                       </div>
                                   </div>
                               </div>
-                              <div className='project__block'>
-                                  <img src='../src/assets/S3.png' className='projects__screenshot'></img>
-                                  <div className='project__description'>
+                              <div className='project__block-mobile'>
+                                  <img src='../src/assets/S3.png' className='projects__screenshot-mobile'></img>
+                                  <div className='project__description-mobile'>
                                       <div>
                                           <div><h2 className='project__text'>Название:</h2><h1>Блокнот заметок</h1></div>
                                           <div><h2 className='project__text'>Технологии:</h2><h1>Typescript, React</h1></div>
@@ -262,8 +262,8 @@ const App = () => {
                               <h2 className='bio__heading'>Контакты</h2>
                           </div>
                           <ul>
-                              <li className='bio__li'>Электронная почта: <h2>borisvip169@gmail.com</h2></li>
-                              <li className='bio__li'>Гитхаб: <h2><a href='https://github.com/kotboris98'>https://github.com/kotboris98</a></h2></li>
+                              <li className='bio__li-mobile'>Электронная почта: <h2>borisvip169@gmail.com</h2></li>
+                              <li className='bio__li-mobile'>Гитхаб: <h2 className='h2-mobile'><a href='https://github.com/kotboris98'>https://github.com/kotboris98</a></h2></li>
                           </ul>
                       </div></>)}
           </main>

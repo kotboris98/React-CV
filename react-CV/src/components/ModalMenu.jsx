@@ -16,9 +16,9 @@ const ModalMenu = ({active, setActive}) => {
         <div className={active ? "modal active" : "modal"} onClick={() => setActive(false)}>
             <div className="modal__content" onClick={e => e.stopPropagation()}>
               <a className="modal__text-mobile" onClick={closeModal} height = '10'>Обо мне</a>
-              <a className="modal__text-mobile" onClick={closeModal} height = '620'>Мой стек</a>
-              <a className="modal__text-mobile" onClick={closeModal} height = '1000'>Проекты</a>
-              <a className="modal__text-mobile" onClick={closeModal} height = '3000'>Контакты</a>
+              <a className="modal__text-mobile" onClick={closeModal} height = '1200'>Мой стек</a>
+              <a className="modal__text-mobile" onClick={closeModal} height = '1900'>Проекты</a>
+              <a className="modal__text-mobile" onClick={closeModal} height = '4000'>Контакты</a>
             </div>
         </div>
     )
