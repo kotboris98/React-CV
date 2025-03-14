@@ -59,13 +59,13 @@ const App = () => {
               <button className="btn" onClick={() => setModalActive(true)}>Связаться</button>
               <div className="icons">
                   <a href="https://t.me/kotboris98">
-                      <img src='../src/assets/telegram.png' className="icon"></img>
+                      <img src='/telegram.png' className="icon"></img>
                   </a>
                   <a href="https://instagram.com/kotboris98" className="icon">
-                      <img src='../src/assets/instagram.png' className="icon"></img>
+                      <img src='/instagram.png' className="icon"></img>
                   </a>
                   <a href="https://vk.com/kotboris_98" className="icon">
-                      <img src='../src/assets/vk.png' className="icon"></img>
+                      <img src='/vk.png' className="icon"></img>
                   </a>
               </div>
             </div>
@@ -75,20 +75,20 @@ const App = () => {
             <div className='navigation'>
             <div className="menu">
                 <a onClick={() => setModalMenuActive(true)} className="icon-mobile">
-                      <img src='../src/assets/burger-menu.svg' className="icon-mobile"></img>
+                      <img src='/burger-menu.svg' className="icon-mobile"></img>
                 </a>
             </div>
             <div className='contacts-mobile'>
               <button className="btn-mobile" onClick={() => setModalActive(true)}>Связаться</button>
               <div className="icons">
                   <a href="https://t.me/kotboris98">
-                      <img src='../src/assets/telegram.png' className="icon-mobile"></img>
+                      <img src='/telegram.png' className="icon-mobile"></img>
                   </a>
                   <a href="https://instagram.com/kotboris98" className="icon-mobile">
-                      <img src='../src/assets/instagram.png' className="icon-mobile"></img>
+                      <img src='/instagram.png' className="icon-mobile"></img>
                   </a>
                   <a href="https://vk.com/kotboris_98" className="icon-mobile">
-                      <img src='../src/assets/vk.png' className="icon-mobile"></img>
+                      <img src='/vk.png' className="icon-mobile"></img>
                   </a>
               </div>
             </div>
@@ -105,7 +105,7 @@ const App = () => {
               <><div className='bio'>
                   <div className='bio__text'>
                       <div className='bio__article'>
-                          <img src='../src/assets/programmer.svg' className='bio__icon'></img>
+                          <img src='/programmer.svg' className='bio__icon'></img>
                           <h2 className='bio__heading'>Обо мне</h2>
                       </div>
                       <ul>
@@ -114,7 +114,7 @@ const App = () => {
                           <li className='bio__li'>Стремлюсь к саморазвитию, получению нового опыта и работе над настоящими проектами</li>
                       </ul>
                       <div className='bio__article'>
-                          <img src='../src/assets/internship.svg' className='bio__icon'></img>
+                          <img src='/internship.svg' className='bio__icon'></img>
                           <h2 className='bio__heading'>Чем я занимался на стажировке</h2>
                       </div>
                       <ul>
@@ -125,30 +125,30 @@ const App = () => {
                       </ul>
                   </div>
                   <div className='photo'>
-                      <img src='../src/assets/photo_of_me.jpg' className='photo__of__me'></img>
+                      <img src='/photo_of_me.jpg' className='photo__of__me'></img>
                   </div>
               </div><div className='stack__and__projects'>
                       <div className='bio__article'>
-                          <img src='../src/assets/tools.svg' className='bio__icon'></img>
+                          <img src='/tools.svg' className='bio__icon'></img>
                           <h2 className='bio__heading'>Мой стек</h2>
                       </div>
                       <div className='stack'>
                           <div className='stack__icons'>
-                              <img src='../src/assets/html.svg' className='stack__icon'></img>
-                              <img src='../src/assets/css.svg' className='stack__icon'></img>
-                              <img src='../src/assets/js.svg' className='stack__icon'></img>
-                              <img src='../src/assets/ts.svg' className='stack__icon'></img>
-                              <img src='../src/assets/react.svg' className='stack__icon'></img>
-                              <img src='../src/assets/git.svg' className='stack__icon'></img>
+                              <img src='/html.svg' className='stack__icon'></img>
+                              <img src='/css.svg' className='stack__icon'></img>
+                              <img src='/js.svg' className='stack__icon'></img>
+                              <img src='/ts.svg' className='stack__icon'></img>
+                              <img src='/react.svg' className='stack__icon'></img>
+                              <img src='/git.svg' className='stack__icon'></img>
                           </div>
                       </div>
                       <div className='bio__article'>
-                          <img src='../src/assets/documents.svg' className='bio__icon'></img>
+                          <img src='/documents.svg' className='bio__icon'></img>
                           <h2 className='bio__heading'>Мои проекты</h2>
                       </div>
                       <div className='projects'>
                           <div className='project__block'>
-                              <img src='../src/assets/S1.png' className='projects__screenshot'></img>
+                              <img src='/S1.png' className='projects__screenshot'></img>
                               <div className='project__description'>
                                   <div>
                                       <div><h2 className='project__text'>Название:</h2><h1>Лендинг веб-страницы проекта Learn Up</h1></div>
@@ -157,7 +157,7 @@ const App = () => {
                               </div>
                           </div>
                           <div className='project__block'>
-                              <img src='../src/assets/S2.png' className='projects__screenshot'></img>
+                              <img src='/S2.png' className='projects__screenshot'></img>
                               <div className='project__description'>
                                   <div>
                                       <div><h2 className='project__text'>Название:</h2><h1>Калькулятор</h1></div>
@@ -166,7 +166,7 @@ const App = () => {
                               </div>
                           </div>
                           <div className='project__block'>
-                              <img src='../src/assets/S3.png' className='projects__screenshot'></img>
+                              <img src='/S3.png' className='projects__screenshot'></img>
                               <div className='project__description'>
                                   <div>
                                       <div><h2 className='project__text'>Название:</h2><h1>Блокнот заметок</h1></div>
@@ -176,7 +176,7 @@ const App = () => {
                           </div>
                       </div>
                       <div className='bio__article'>
-                          <img src='../src/assets/Phone.svg' className='bio__icon'></img>
+                          <img src='/Phone.svg' className='bio__icon'></img>
                           <h2 className='bio__heading'>Контакты</h2>
                       </div>
                       <ul>
@@ -189,17 +189,17 @@ const App = () => {
                 <><div className='bio'>
                       <div className='bio__text-mobile'>
                           <div className='bio__article-mobile'>
-                              <img src='../src/assets/programmer.svg' className='bio__icon'></img>
+                              <img src='/programmer.svg' className='bio__icon'></img>
                               <h2 className='bio__heading-mobile'>Обо мне</h2>
                           </div>
-                          <img src='../src/assets/photo_of_me.jpg' className='photo__of__me-mobile'></img>
+                          <img src='/photo_of_me.jpg' className='photo__of__me-mobile'></img>
                           <ul className='ul-mobile'>
                               <li className='bio__li-mobile'>Начинающий Frontend-разработчик</li>
                               <li className='bio__li-mobile'>Придерживаюсь чистого и аккуратного кода</li>
                               <li className='bio__li-mobile'>Стремлюсь к саморазвитию, получению нового опыта и работе над настоящими проектами</li>
                           </ul>
                           <div className='bio__article-mobile'>
-                              <img src='../src/assets/internship.svg' className='bio__icon'></img>
+                              <img src='/internship.svg' className='bio__icon'></img>
                               <h2 className='bio__heading-mobile'>Чем я занимался на стажировке</h2>
                           </div>
                           <ul className='ul-mobile'>
@@ -211,26 +211,26 @@ const App = () => {
                       </div>
                   </div><div className='stack__and__projects-mobile'>
                           <div className='bio__article-mobile'>
-                              <img src='../src/assets/tools.svg' className='bio__icon'></img>
+                              <img src='/tools.svg' className='bio__icon'></img>
                               <h2 className='bio__heading-mobile'>Мой стек</h2>
                           </div>
                           <div className='stack-mobile'>
                               <div className='stack__icons-mobile'>
-                                  <img src='../src/assets/html.svg' className='stack__icon'></img>
-                                  <img src='../src/assets/css.svg' className='stack__icon'></img>
-                                  <img src='../src/assets/js.svg' className='stack__icon'></img>
-                                  <img src='../src/assets/ts.svg' className='stack__icon'></img>
-                                  <img src='../src/assets/react.svg' className='stack__icon'></img>
-                                  <img src='../src/assets/git.svg' className='stack__icon'></img>
+                                  <img src='/html.svg' className='stack__icon'></img>
+                                  <img src='/css.svg' className='stack__icon'></img>
+                                  <img src='/js.svg' className='stack__icon'></img>
+                                  <img src='/ts.svg' className='stack__icon'></img>
+                                  <img src='/react.svg' className='stack__icon'></img>
+                                  <img src='/git.svg' className='stack__icon'></img>
                               </div>
                           </div>
                           <div className='bio__article-mobile'>
-                              <img src='../src/assets/documents.svg' className='bio__icon'></img>
+                              <img src='/documents.svg' className='bio__icon'></img>
                               <h2 className='bio__heading'>Мои проекты</h2>
                           </div>
                           <div className='projects-mobile'>
                               <div className='project__block-mobile'>
-                                  <img src='../src/assets/S1.png' className='projects__screenshot-mobile'></img>
+                                  <img src='/S1.png' className='projects__screenshot-mobile'></img>
                                   <div className='project__description-mobile'>
                                       <div>
                                           <div><h2 className='project__text'>Название:</h2><h1>Лендинг веб-страницы проекта Learn Up</h1></div>
@@ -239,7 +239,7 @@ const App = () => {
                                   </div>
                               </div>
                               <div className='project__block-mobile'>
-                                  <img src='../src/assets/S2.png' className='projects__screenshot-mobile'></img>
+                                  <img src='/S2.png' className='projects__screenshot-mobile'></img>
                                   <div className='project__description-mobile'>
                                       <div>
                                           <div><h2 className='project__text'>Название:</h2><h1>Калькулятор</h1></div>
@@ -248,7 +248,7 @@ const App = () => {
                                   </div>
                               </div>
                               <div className='project__block-mobile'>
-                                  <img src='../src/assets/S3.png' className='projects__screenshot-mobile'></img>
+                                  <img src='/S3.png' className='projects__screenshot-mobile'></img>
                                   <div className='project__description-mobile'>
                                       <div>
                                           <div><h2 className='project__text'>Название:</h2><h1>Блокнот заметок</h1></div>
@@ -258,7 +258,7 @@ const App = () => {
                               </div>
                           </div>
                           <div className='bio__article-mobile'>
-                              <img src='../src/assets/Phone.svg' className='bio__icon'></img>
+                              <img src='/Phone.svg' className='bio__icon'></img>
                               <h2 className='bio__heading'>Контакты</h2>
                           </div>
                           <ul>
